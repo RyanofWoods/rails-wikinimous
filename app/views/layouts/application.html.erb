@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <%= link_to "Wikinimous", articles_path %>
+        <%= link_to "New Article", new_article_path %>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
