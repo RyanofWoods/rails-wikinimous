@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article.destroy
+    @article.update(strong_params)
     redirect_to article_path(@article)
   end
 
